@@ -63,7 +63,7 @@ Troubleshooting:
 ```
 docker run --rm --name bitcoin_address_service -p 8080:8080 -p 8081:8081 --link graphite --link ganglia bitcoin_address_service:latest
 
-or
+# or
 
 docker run -it --rm --name bitcoin_address_service -p 8080:8080 -p 8081:8081 --link graphite --link ganglia bitcoin_address_service:latest /bin/bash
 ```
