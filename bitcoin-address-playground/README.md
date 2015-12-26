@@ -11,6 +11,19 @@ docker-machine ip local
 Using legacy docker links since I don't want to do the work for proper discovery and docker networks.
 
 
+## Docker Compose
+
+```
+docker-compose up -d
+
+docker-compose ps
+
+docker-compose stop
+
+docker-compose rm -f
+```
+
+
 ## Graphite
 
 From [jstenhouse/docker-graphite](https://github.com/jstenhouse/docker-graphite):
@@ -38,11 +51,11 @@ http://dockerhost:8083
 ## Grafana
 
 ```
-docker run --name grafana -d -p 3000:3000 grafana/grafana:latest
+docker run --name grafana -d -p 8084:3000 grafana/grafana:latest
 ```
 
 ```
-http://dockerhost:3000 # admin/admin
+http://dockerhost:8084 # admin/admin
 
 # add new data source
 
@@ -91,11 +104,6 @@ TODO
 
 
 ## Logstash
-
-TODO
-
-
-## Docker Compose
 
 TODO
 
