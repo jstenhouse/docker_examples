@@ -43,7 +43,7 @@ docker run --name grafana -d -p 3000:3000 grafana/grafana:latest
 http://dockerhost:3000 # admin/admin
 ```
 
-**Note:** Doesn't work yet for dockerized Graphite because Graphite needs to setup CORS and changing the nginx conf file isn't super easy with creativearea/graphite without making changes. See [Grafana docs](http://docs.grafana.org/install/#graphite-server-config).
+**Note:** Doesn't work yet for dockerized Graphite because Graphite needs to setup CORS and changing the nginx conf file isn't super easy with creativearea/graphite without making new docker image. See [Grafana docs](http://docs.grafana.org/install/#graphite-server-config).
 
 
 ## Bitcoin Address Service Example
