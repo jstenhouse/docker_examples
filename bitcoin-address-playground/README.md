@@ -14,7 +14,7 @@ Using legacy docker links since I don't want to do the work for proper discovery
 ## Graphite
 
 ```
-docker run --name graphite -d -p 8082:80 -p 2003:2003 -p 2004:2004 -p 7002:7002 creativearea/graphite:latest
+docker run --name graphite -d -p 8082:80 -p 2003:2003 -p 2004:2004 -p 7002:7002 jstenhouse/graphite:latest
 ```
 
 ```
@@ -41,9 +41,13 @@ docker run --name grafana -d -p 3000:3000 grafana/grafana:latest
 
 ```
 http://dockerhost:3000 # admin/admin
-```
 
-**Note:** Doesn't work yet for dockerized Graphite because Graphite needs to setup CORS and changing the nginx conf file isn't super easy with creativearea/graphite without making new docker image. See [Grafana docs](http://docs.grafana.org/install/#graphite-server-config).
+# add new data source
+
+# Graphite with direct url http://dockerhost:8082
+
+# 
+```
 
 
 ## Bitcoin Address Service Example
