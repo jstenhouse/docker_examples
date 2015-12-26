@@ -104,8 +104,3 @@ TODO
 ## Logstash
 
 TODO
-
-
-## Docker Swarm
-
-TODO
