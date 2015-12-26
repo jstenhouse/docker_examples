@@ -8,7 +8,7 @@ docker-machine ip local
 
 ## Legacy Docker Links
 
-Using legacy docker links since I don't want to do the work for proper discovery.
+Using legacy docker links since I don't want to do the work for proper discovery and docker networks.
 
 
 ## Graphite
