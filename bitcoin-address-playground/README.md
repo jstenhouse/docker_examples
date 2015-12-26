@@ -25,7 +25,7 @@ http://dockerhost:8082
 ## Ganglia
 
 ```
-docker run --name ganglia -d -p 8083:80 -p 8649:8649 -p 8649:8649/udp mbocek/ganglia
+docker run --name ganglia -d -p 8083:80 -p 8649:8649 -p 8649:8649/udp mbocek/ganglia:latest
 ```
 
 ```
