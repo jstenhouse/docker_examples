@@ -60,8 +60,6 @@ http://dockerhost:8084 # admin/admin
 # add new data source
 
 # Graphite with direct url http://dockerhost:8082
-
-# 
 ```
 
 
