@@ -13,6 +13,8 @@ Using legacy docker links since I don't want to do the work for proper discovery
 
 ## Graphite
 
+From [jstenhouse/docker-graphite](https://github.com/jstenhouse/docker-graphite):
+
 ```
 docker run --name graphite -d -p 8082:80 -p 2003:2003 -p 2004:2004 -p 7002:7002 jstenhouse/graphite:latest
 ```
