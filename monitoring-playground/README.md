@@ -65,10 +65,10 @@ http://dockerhost:8084 # admin/admin
 
 ## Bitcoin Address Service Example
 
-From [bitcoin_address_service_example](https://github.com/jstenhouse/bitcoin_address_service_example):
+From [jstenhouse/bitcoin_address_service_example](https://github.com/jstenhouse/bitcoin_address_service_example):
 
 ```
-docker run --name bitcoin_address_service -d -p 8080:8080 -p 8081:8081 --link graphite --link ganglia bitcoin_address_service:latest
+docker run --name bitcoin_address_service -d -p 8080:8080 -p 8081:8081 --link graphite --link ganglia jstenhouse/bitcoin_address_service:latest
 ```
 
 ```
@@ -78,17 +78,12 @@ http://dockerhost:8080/bitcoin/addresses
 Troubleshooting:
 
 ```
-docker run --rm --name bitcoin_address_service -p 8080:8080 -p 8081:8081 --link graphite --link ganglia bitcoin_address_service:latest
+docker run --rm --name bitcoin_address_service -p 8080:8080 -p 8081:8081 --link graphite --link ganglia jstenhouse/bitcoin_address_service:latest
 
 # or
 
-docker run -it --rm --name bitcoin_address_service -p 8080:8080 -p 8081:8081 --link graphite --link ganglia bitcoin_address_service:latest /bin/bash
+docker run -it --rm --name bitcoin_address_service -p 8080:8080 -p 8081:8081 --link graphite --link ganglia jstenhouse/bitcoin_address_service:latest /bin/bash
 ```
-
-
-## Cassandra
-
-TODO
 
 
 ## Statsd
@@ -104,3 +99,14 @@ TODO
 ## Logstash
 
 TODO
+
+
+## Kibana
+
+TODO
+
+
+## AWS ECS
+
+TODO
+
