@@ -43,6 +43,10 @@ http://dockerhost:8082
 docker run --name graphite -d -p 8082:80 -p 2003:2003 -p 8125:8125/udp -p 8126:8126 hopsoft/graphite-statsd
 ```
 
+```
+http://dockerhost:8082
+```
+
 **Note:** double reporting stats to carbon and statsd just to see how it all works.
 
 
