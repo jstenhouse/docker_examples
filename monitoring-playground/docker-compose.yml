@@ -16,6 +16,26 @@ graphite:
   image: hopsoft/graphite-statsd:latest
 
 
+elk:
+  ports:
+    - "9292:9292"
+    - "9200:9200"
+    - "5000:5000"
+    - "5000:5000/udp"
+  environment:
+    LOGSPOUT: ignore
+  volumes:
+    - config:/opt/logstash/conf.d
+  image: pblittle/docker-logstash:latest
+
+
+logspout:
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+  command: syslog://localhost:5000
+  image: gliderlabs/logspout:latest
+
+
 ganglia:
   ports:
     - "8083:80"

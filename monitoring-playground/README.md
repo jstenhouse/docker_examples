@@ -99,12 +99,19 @@ docker run -it --rm --name bitcoin_address_service -p 8080:8080 -p 8081:8081 --l
 ```
 
 
-## Kibana + ElasticSearch + Logstash
+## ELK (ElasticSearch + Logstash + Kibana)
 
-TODO
+```
+docker run --name elk -d -p 9292:9292 -p 9200:9200 -p 5000:5000 -p 5000:5000/udp -e 'LOGSPOUT=ignore' -v config:/opt/logstash/conf.d pblittle/docker-logstash:latest
+```
+
+```
+http://dockerhost:9292/index.html#/dashboard/file/default.json
+```
 
 
-## AWS ECS
+## Logspout
 
-TODO
-
+```
+docker run --name logspout -d -v /var/run/docker.sock:/tmp/docker.sock gliderlabs/logspout:latest syslog://localhost:5000
+```
