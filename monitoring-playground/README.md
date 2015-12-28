@@ -2,7 +2,7 @@
 ## Dockerhost
 
 ```
-docker-machine ip local
+docker-machine ip local # or name of available docker-machine 
 ```
 
 
