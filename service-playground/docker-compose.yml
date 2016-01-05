@@ -18,3 +18,11 @@ disovery_discovery:
   environment:
     SERVER_PORT: 8082
   image: jstenhouse/discovery_example:latest
+
+etcd:
+  ports:
+    - "2379:2379"
+    - "2380:2380"
+    - "4001:4001"
+  command: -name etcd -initial-cluster-token etcd-cluster -initial-cluster-state new 
+  image: quay.io/coreos/etcd:v2.2.3

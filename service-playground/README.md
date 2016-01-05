@@ -23,3 +23,6 @@ docker-compose rm -f
 - Discovery: Consul vs etcd vs ZooKeeper
 
 - Hystrix
+
+
+quay.io/coreos/etcd:v2.2.3
