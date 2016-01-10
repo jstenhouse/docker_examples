@@ -31,7 +31,3 @@ http://dockerhost:8081/pong
 ```
 http://dockerhost:8082/services
 ```
-
-### TODO
-
-- Hystrix
