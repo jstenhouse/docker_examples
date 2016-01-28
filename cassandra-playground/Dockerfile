@@ -1,4 +1,4 @@
-FROM cassandra:3.0.2
+FROM cassandra:2.2.4
 
 # we need this to enable JMX monitoring
 COPY conf/jmxremote.password /etc/cassandra/jmxremote.password
